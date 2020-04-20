@@ -17,7 +17,7 @@
 <li><code>color_to_int_rgb</code></li>
 </ul>
 </li>
-<li style="list-style: none"><input type="checkbox"> 颜色的运算函数<ul>
+<li style="list-style: none"><input type="checkbox" checked> 颜色的运算函数<ul>
 <li><code>invert_color</code></li>
 <li><code>color_gradient</code></li>
 <li><code>interpolate_color</code></li>
@@ -25,14 +25,22 @@
 <li><code>random_color</code></li>
 </ul>
 </li>
-<li style="list-style: none"><input type="checkbox"> 设置颜色<ul>
+<li style="list-style: none"><input type="checkbox" checked> 设置颜色<ul>
 <li><code>Mobject</code>略,一般上色的都为<code>VMobject</code></li>
 <li><code>color</code>分为<code>stroke_color</code>和<code>fill_color</code></li>
 <li>传入<code>color</code>, <code>stroke_color</code>, <code>fill_color</code></li>
 <li><code>set_color</code>, <code>set_stroke</code>, <code>set_fill</code>方法的<code>color</code>和<code>opacity</code></li>
-<li><code>set_sheen</code></li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 给子物体上色<ul>
+<li><code>set_color</code></li>
 <li><code>set_color_by_gradient</code></li>
-<li><code>set_color</code>中列表渐变色</li>
+<li><code>set_colors_by_radial_gradient</code></li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 光泽与渐变色<ul>
+<li><code>set_sheen</code></li>
+<li><code>set_color</code>中使用列表达到渐变色</li>
 </ul>
 </li>
 </ol>
@@ -44,6 +52,9 @@
 <li>manim的<code>rgb_to_color</code>函数传入的rgb的值为0~1,不是0~255</li>
 <li>用for循环遍历字典键值对<code>for key, value in dic.items():</code>,遍历其中一部分<code>for key, value in list(dic.items())[1:3]</code>将键值对转化为列表,并用切片</li>
 <li><code>Arrow</code>的箭头为<code>.tip</code></li>
+<li><code>.keys(),.values()</code>不为列表,需要套在<code>list()</code>里面</li>
+<li><code>set_colors_by_radial_gradient</code>利用中心与center的距离对颜色进行插值,radius外的所有子物体全为outer_color颜色</li>
+<li>含有<code>sheen_factor</code>的物体设置渐变色后与sheen_factor无关</li>
 </ul>
 </div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a class="article-share-link" data-url="https://tony031218.github.io/2020/04/18/manim教程系列-颜色-笔记/" data-id="ck956acry002ailfttr1sgif2" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACu0lEQVR42u3awU4rMRAEQP7/p3kS16dsumdsyKH2FBHiuIzkMT3++oqf75/n1U++4ycZ+f93n0c48ODh4eGNpv48oVc/eTVOsiivlmm/oHh4eHi/w3vesmcTfR4hLxL5aHh4eHifxksOx8m7STHISwgeHh7e5/Nmh+MWny8EHh4e3l/x2qHbAtCWh/Z3DmQteHh4eF0fqmiAfcLri/09PDw8vEVXvS0Y7XfNykwxQzw8PLwLvDY4OBVPPMPaNtib5cbDw8M7yjsbsNZbdhlDHDhS4+Hh4R3i5dT8ENxezGovJURHfDw8PLxrvHxCSau+LQmzI3W0EHh4eHjXeG0MkReJthjkCxF9Fg8PD+8ybxPF5pnAbMxZrIyHh4d3g7dvTeXBxCx9LcpA0t/Dw8PDW/M2F63yFv6m6TUrP8M7ZXh4eHgxb9Piyjf3ZKMvpp6MhoeHh3eBtwlq23B2A2tDk2K98fDw8EreqYNsewXhcFD7nFLj4eHhHeUl4cLvXMNqr7HmhQcPDw/vLG8W1LaXUHNwHvJG5QQPDw/vAi/flNuWWB7FJmHxZrnx8PDwzvLyLbj94s22fizexcPDw7vG27T5ZzFr8ql8uYuUBQ8PD+8Qr710NZtWHgfnBePNwRoPDw/vGq8NIzZXr2aH9WRphp09PDw8vJK3uUQ1KxKzw3QbKOPh4eHd420a83nokAe17V/mzZLh4eHhXeC1l6XqQRctsSS6LWIOPDw8vEO82bH1VIN/XzbejIaHh4d3gZc/Rdtp8SQx8ea6GB4eHt4pXh6PtnHALKjNR47+GcDDw8O7xpsVg3yLz8eflZOXn8XDw8P7GF7+ZfkmnrS+2nfx8PDw/pZ3KvOYXaV6PqC/6ezh4eHhXeDNwoi83TUrPMnrN3PAw8PDu8CbNcDa7X52aE5G28cZeHh4eDHvH29XQQWTcSqAAAAAAElFTkSuQmCC">分享</a><div class="tags"><a href="/tags/笔记/">笔记</a><a href="/tags/manim/">manim</a><a href="/tags/python/">python</a></div><div class="post-nav"><a class="next" href="/2020/04/17/「网络流24题」骑士共存问题-题解/">「网络流24题」骑士共存问题-题解</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'true' == true ? true : false;
 var verify = 'false' == true ? true : false;
