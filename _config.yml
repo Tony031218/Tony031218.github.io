@@ -55,6 +55,12 @@ index_generator:
 
 archive_generator:
   per_page: 30
+
+tag_generator:
+  per_page: 30
+
+category_generator:
+  per_page: 30
   
 # Category & Tag
 default_category: uncategorized
