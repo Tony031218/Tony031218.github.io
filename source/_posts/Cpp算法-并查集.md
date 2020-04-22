@@ -2,10 +2,13 @@
 title: Cpp算法-并查集
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: 9603fc0b
 date: 2019-01-10 13:16:01
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 
 #### 说明

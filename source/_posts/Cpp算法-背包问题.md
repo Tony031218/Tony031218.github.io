@@ -2,10 +2,13 @@
 title: Cpp算法-背包问题
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: 990bbe9a
 date: 2019-01-10 13:13:52
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 ## 01背包问题
 

@@ -2,10 +2,13 @@
 title: Cpp算法-图论-Kruskal
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: c4fb1928
 date: 2019-01-10 13:10:40
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 #### 说明
 `ufs[], find(int), unionn(int, int)`并查集结构<br/>

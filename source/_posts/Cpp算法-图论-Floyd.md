@@ -2,10 +2,13 @@
 title: Cpp算法-图论-Floyd
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: ba77762f
 date: 2019-01-10 13:07:02
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 #### 说明
 `n, m, G[][]`点数、边数、邻接矩阵<br/>

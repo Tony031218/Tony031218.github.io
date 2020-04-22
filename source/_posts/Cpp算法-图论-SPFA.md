@@ -2,10 +2,13 @@
 title: Cpp算法-图论-SPFA
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: 8ed8c69a
 date: 2019-01-10 13:12:40
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 #### 说明
 `n, m, s`点数、边数、源点<br/>

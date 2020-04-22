@@ -2,9 +2,10 @@
 title: Linux美化方案
 toc: true
 mathjax: true
-date: 2019-01-09 16:20:13
 tags: Linux
 description: 分四步对Linux进行美化
+abbrlink: f2ddc0e6
+date: 2019-01-09 16:20:13
 ---
 
 

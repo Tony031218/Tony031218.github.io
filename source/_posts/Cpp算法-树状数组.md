@@ -2,10 +2,13 @@
 title: Cpp算法-树状数组
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: 72c90980
 date: 2019-01-10 12:57:04
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 # 树状数组
 

@@ -2,11 +2,21 @@
 title: manim教程系列-颜色 笔记
 mathjax: true
 toc: true
+tags:
+  - manim
+  - python
+  - 笔记
+categories:
+  - manim
+  - 笔记
+abbrlink: 2e2c9a7
 date: 2020-04-18 13:18:52
-tags: [manim, python, 笔记]
-categories: [manim, 笔记]
-description: 这篇文章是在写 manim教程系列视频 的 颜色 部分时做的一些笔记,包括整个视频的结构和写代码时了解的一些用法的笔记。视频目前已经完成,还没有发布
 ---
+
+这篇文章是在写 __manim教程系列视频__ 的 *颜色* 部分时做的一些笔记,包括 整个视频的结构 和 写代码时了解的一些用法的笔记
+视频已经发布,地址:[BV1vZ4y1x7hT](https://www.bilibili.com/video/BV1vZ4y1x7hT)
+
+<!--more-->
 
 ## 视频结构大纲
 0. [x] 开头

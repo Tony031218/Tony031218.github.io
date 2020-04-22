@@ -2,8 +2,9 @@
 title: Markdown语法
 toc: true
 mathjax: true
-date: 2019-01-09 16:05:14
 tags: markdown
+abbrlink: 3c50d03d
+date: 2019-01-09 16:05:14
 ---
 
 `Markdown`是一款简洁实用的文本标记语言，可以在`mkdocs`,`hexo`中使用

@@ -2,10 +2,13 @@
 title: Cpp算法-BFS
 mathjax: true
 toc: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: '99890668'
 date: 2019-01-10 12:55:14
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 ## 说明
 本文实现只是框架，应当灵活运用，bfs()函数内部根据情况灵活更改

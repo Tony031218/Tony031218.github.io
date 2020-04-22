@@ -2,10 +2,13 @@
 title: Cpp算法-STL标准库
 mathjax: true
 toc: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: ac108281
 date: 2019-01-10 13:15:15
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 ## 模板
 ---

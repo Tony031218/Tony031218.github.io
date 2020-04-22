@@ -3,9 +3,14 @@ title: 「Luogu P1516」青蛙的约会-题解
 mathjax: true
 toc: true
 top: 4
-date: 2019-05-08 16:17:20
-tags: [Cpp, 题解, Luogu, 数论]
+tags:
+  - Cpp
+  - 题解
+  - Luogu
+  - 数论
 categories: 题解
+abbrlink: 1f4bfad8
+date: 2019-05-08 16:17:20
 ---
 
 题目传送门: [「Luogu P1516」青蛙的约会](https://www.luogu.org/problemnew/show/P1516)

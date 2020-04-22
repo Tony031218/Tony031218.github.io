@@ -2,10 +2,13 @@
 title: Cpp算法-大整数类
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: b995b9d7
 date: 2019-01-10 12:56:08
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 ```cpp
 #include<string>

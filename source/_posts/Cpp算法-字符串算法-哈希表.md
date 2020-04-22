@@ -2,10 +2,13 @@
 title: Cpp算法-字符串算法-哈希表
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: 666f05c6
 date: 2019-01-10 13:09:06
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 例：[洛谷P4305](https://www.luogu.org/problemnew/show/P4305)
 

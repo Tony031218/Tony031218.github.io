@@ -2,10 +2,13 @@
 title: Cpp算法-图论-链式前向星
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: dda660a4
 date: 2019-01-10 13:12:07
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 #### 说明
 `cnt`记数<br/>

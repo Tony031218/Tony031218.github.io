@@ -2,8 +2,12 @@
 title: Hexo搭建博客
 toc: true
 mathjax: true
+tags:
+  - hexo
+  - blog
+  - markdown
+abbrlink: 178c0d2c
 date: 2019-03-12 12:50:18
-tags: [hexo, blog, markdown]
 ---
 
 由于`mkdocs`上有很多不足，例如没有标签，分类，评论，计数等等，故转至使用`Hexo`搭建博客，以下是我折腾的过程

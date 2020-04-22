@@ -2,10 +2,13 @@
 title: Cpp算法-动态规划
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: 8364d7e9
 date: 2019-01-10 12:58:38
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 __*待完成*__
 

@@ -2,8 +2,12 @@
 title: MkDocs使用方法
 toc: true
 mathjax: true
+tags:
+  - mkdocs
+  - markdown
+  - blog
+abbrlink: ce42b873
 date: 2019-01-09 16:02:20
-tags: [mkdocs, markdown, blog]
 ---
 
 mkdocs是一款基于python markdown的项目文档工具,可以用来编写一个网站

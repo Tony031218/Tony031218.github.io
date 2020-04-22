@@ -2,9 +2,15 @@
 title: 「Luogu P1993」小K的农场-题解 & 差分约束系统
 mathjax: true
 toc: true
-date: 2019-08-31 15:24:33
-tags: [Cpp, 题解, Luogu, 图论, 差分约束]
+tags:
+  - Cpp
+  - 题解
+  - Luogu
+  - 图论
+  - 差分约束
 categories: 题解
+abbrlink: 6dcf876e
+date: 2019-08-31 15:24:33
 ---
 
 

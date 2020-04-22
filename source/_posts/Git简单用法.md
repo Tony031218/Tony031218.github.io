@@ -2,8 +2,11 @@
 title: Git简单用法
 toc: true
 mathjax: true
+tags:
+  - git
+  - github
+abbrlink: e779c345
 date: 2019-01-09 16:18:10
-tags: [git, github]
 ---
 
 `Git`是一款版本控制软件，配合`GitHub`可以更好的控制代码

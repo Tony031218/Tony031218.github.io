@@ -2,10 +2,13 @@
 title: Cpp算法-图论-Dijkstra
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: 982e7a01
 date: 2019-01-10 12:57:53
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 #### 说明
 `n, m`点数、边数<br/>

@@ -2,10 +2,13 @@
 title: Cpp算法-堆
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: bb233fbc
 date: 2019-01-10 13:13:20
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 #### 说明
 `heap[]`堆<br/>

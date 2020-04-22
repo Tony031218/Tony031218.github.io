@@ -2,10 +2,13 @@
 title: Cpp算法-DFS
 mathjax: true
 toc: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: 9d047ada
 date: 2019-01-10 12:54:06
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 ## 说明
 本文实现只是框架，应当灵活运用，dfs(...)函数返回值类型、参数列表根据情况灵活更改

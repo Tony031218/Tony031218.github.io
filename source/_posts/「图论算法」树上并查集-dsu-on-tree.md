@@ -2,9 +2,18 @@
 title: 「图论算法」树上并查集 dsu on tree
 mathjax: true
 toc: true
+tags:
+  - Cpp
+  - 算法
+  - 笔记
+  - 图论
+  - dsu on tree
+categories:
+  - C++算法
+  - 笔记
+  - 图论
+abbrlink: da7e0a9d
 date: 2019-09-22 15:36:46
-tags: [Cpp, 算法, 笔记, 图论, dsu on tree]
-categories: [C++算法, 笔记, 图论] 
 ---
 
 $dsu\ on\ tree$($disjoint\ set\ union\ \text{on tree}$)算法，也称 __树上并查集__。使用了并查集的*按秩合并*(__启发式合并__)的方法，结合 *树链剖分* 中的 __轻重儿子划分__ ，对 __树上暴力统计__ 进行了优化。使用这个算法需要满足以下两个条件：

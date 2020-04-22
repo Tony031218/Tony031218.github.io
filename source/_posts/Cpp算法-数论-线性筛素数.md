@@ -2,10 +2,13 @@
 title: Cpp算法-数论-线性筛素数
 toc: true
 mathjax: true
+tags:
+  - Cpp
+  - 算法
+description: ' '
+categories: C++算法
+abbrlink: cff9d95
 date: 2019-01-10 13:07:43
-tags: [Cpp, 算法]
-description: " "
-categories: C++算法 
 ---
 #### 说明
 `p[]` 最终结果
