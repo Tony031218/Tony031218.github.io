@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Markdown语法 | Tony's Blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Markdown语法</h1><a id="logo" href="/.">Tony's Blog</a><p class="description">鹤翔万里的博客</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/Template-Problem/"><i class="fa fa-question"> 模板题目整理</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Markdown语法</h1><div class="post-meta">Jan 9, 2019<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a class="disqus-comment-count" href="/p/3c50d03d.html#vcomment"><span class="valine-comment-count" data-xid="/p/3c50d03d.html"></span><span> 条评论</span></a><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#目录"><span class="toc-number">1.</span> <span class="toc-text">目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文字样式"><span class="toc-number">2.</span> <span class="toc-text">文字样式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#引用"><span class="toc-number">3.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#空行"><span class="toc-number">4.</span> <span class="toc-text">空行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#空格"><span class="toc-number">5.</span> <span class="toc-text">空格</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#图片"><span class="toc-number">6.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#链接"><span class="toc-number">7.</span> <span class="toc-text">链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码块"><span class="toc-number">8.</span> <span class="toc-text">代码块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#序表"><span class="toc-number">9.</span> <span class="toc-text">序表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#任务列表"><span class="toc-number">10.</span> <span class="toc-text">任务列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#表格"><span class="toc-number">11.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#内联CSS"><span class="toc-number">12.</span> <span class="toc-text">内联CSS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#语义标记"><span class="toc-number">13.</span> <span class="toc-text">语义标记</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#公式"><span class="toc-number">14.</span> <span class="toc-text">公式</span></a></li></ol></div></div><div class="post-content"><p><code>Markdown</code>是一款简洁实用的文本标记语言，可以在<code>mkdocs</code>,<code>hexo</code>中使用</p>
+<a id="more"></a>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+<p>下划线<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">***</span></span><br><span class="line"><span class="string">****</span></span><br><span class="line"><span class="bullet">-</span><span class="meta">---</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><p><code>[TOC]</code></p>
+<hr>
+<h4 id="文字样式"><a href="#文字样式" class="headerlink" title="文字样式"></a>文字样式</h4><p><strong>`</strong> <strong>`加粗</strong><br><br><em>`</em> <em>`倾斜</em><br><br><strong><em>`</em></strong> <strong><em>`倾斜加粗</em></strong><br><br><code>~~ ~~</code><del>删除</del></p>
+<hr>
+<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><p><code>&gt;</code>一级 <code>&gt;&gt;</code>二级</p>
+<blockquote>
+<p>引用</p>
+<blockquote>
+<p>二级引用</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<hr>
+<h4 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h4><p><code>&amp;nbsp; 或 &lt;br/&gt;</code><br>&nbsp;<br><br></p>
+<hr>
+<h4 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h4><p><code>&amp;emsp;</code><br><br>&emsp;&emsp;空格</p>
+<hr>
+<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><p><code>![图片名](图片地址 &quot;title&quot;)</code><br><img src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike180%2C5%2C5%2C180%2C60/sign=d997317c11ce36d3b6098b625b9a51e2/00e93901213fb80ef9ceac7132d12f2eb938947d.jpg" alt="markdown"></p>
+<p>或使用html标签<code>&lt;img src=&quot;...&quot; width=&quot;...&quot; height=&quot;...&quot; /&gt;</code></p>
+<hr>
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p><code>[网页名](地址 &quot;title&quot;)</code><br><a href="http://www.baidu.com/" title="百度一下" target="_blank" rel="noopener">百度</a></p>
+<hr>
+<h4 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"hello markdown"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="序表"><a href="#序表" class="headerlink" title="序表"></a>序表</h4><ol>
+<li>有序1</li>
+<li>有序2</li>
+<li>有序3</li>
+</ol>
+<hr>
+<p><code>+ 或 - 或 *</code></p>
+<ul>
+<li>无序</li>
+</ul>
+<ul>
+<li>无序</li>
+</ul>
+<ul>
+<li>无序</li>
+</ul>
+<hr>
+<ul>
+<li>一级无序<ul>
+<li>二级无序<ul>
+<li>三级无序<ul>
+<li>四级无序</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h4><p><code>- [ ] ...</code><br><br><code>- [x] ...</code><br><br><code>mkdocs</code>需要<code>pymdown</code>中的<code>pymdownx</code>模块<br><br><code>GitHub</code>支持</p>
+<hr>
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|表头|表头|表头|</span><br><span class="line">|<span class="symbol">:----------|</span><span class="symbol">:----------</span><span class="symbol">:|----------</span><span class="symbol">:|</span></span><br><span class="line">| 左对齐 |居中|右对齐|</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">表头</th>
+<th style="text-align:center">表头</th>
+<th style="text-align:right">表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">左对齐</td>
+<td style="text-align:center">居中</td>
+<td style="text-align:right">右对齐</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="内联CSS"><a href="#内联CSS" class="headerlink" title="内联CSS"></a>内联CSS</h4><p><code>&lt;p style=&quot;color: #AD5D0F;font-size: 30px; font-family: &#39;Consolas&#39;;&quot;&gt;CSS&lt;/p&gt;</code></p>
+<p style="color: #AD5D0F;font-size: 30px; font-family: 'Consolas';">CSS</p>
+
+<hr>
+<h4 id="语义标记"><a href="#语义标记" class="headerlink" title="语义标记"></a>语义标记</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span>斜体<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>加粗<span class="tag">&lt;/<span class="name">b</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">em</span>&gt;</span>强调<span class="tag">&lt;/<span class="name">em</span>&gt;</span></span><br><span class="line">上标： Z<span class="tag">&lt;<span class="name">sup</span>&gt;</span>a<span class="tag">&lt;/<span class="name">sup</span>&gt;</span></span><br><span class="line">下标： Z<span class="tag">&lt;<span class="name">sub</span>&gt;</span>a<span class="tag">&lt;/<span class="name">sub</span>&gt;</span></span><br><span class="line">键盘文本： <span class="tag">&lt;<span class="name">kbd</span>&gt;</span>Ctrl<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p> <i>斜体</i><br><br> <b>加粗</b><br><br> <em>强调</em><br><br> 上标： Z<sup>a</sup><br><br> 下标： Z<sub>a</sub><br><br> 键盘文本： <kbd>Ctrl</kbd><br></p>
+<hr>
+<h4 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h4><p>文档末尾添加<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">async</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/x-mathjax-config"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">MathJax.Hub.Config(&#123;</span></span><br><span class="line"><span class="actionscript">	  tex2jax: &#123;inlineMath: [[<span class="string">'$'</span>,<span class="string">'$'</span>], [<span class="string">'\\('</span>,<span class="string">'\\)'</span>]]&#125;</span></span><br><span class="line"><span class="undefined">&#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>使用$\LaTeX$语法编写公式<br>$$<br>x \href{why-equal.html} {=} y^2 + 1<br>$$<br>$$<br>x = {-b \pm \sqrt{b^2-4ac} \over 2a}<br>$$</p>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a class="article-share-link" data-url="https://tony031218.github.io/p/3c50d03d.html" data-id="ck9ao3oyg0020tcftyl6jnvib" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACGUlEQVR42u3aQW7DMAwEwP7/0+61BVplV4oDWBqdDMdwPDoQJMWvr3hdP9Z/v67fGd9/w8LAwHgs4xquhDG3Efn1+NswMDDOYYwD3xiQg/Mtq4MyBgYGRvlMG6wxMDAw7mCME7hxOpjcwcDAwFhJ13JGjvxoLY6BgfFARt4s+/z1LecbGBgYj2Jc5coDYp4Izn3Jr/dgYGBszcgDXJL8rR9G5mkfBgbGOYz1pK0Oi2UaGm00BgbGAYw2FOYNtbmNyA8MigwXAwPjsYx8kKvNN9eHLepgjYGBcQBj7qhgrlWXh+CinMbAwNiUMffSueA490wUdjEwMLZmtJg5fP62ttH2oojFwMDYiNH+QT6EsVIGLwViDAyMrRlzRWwblNuNaFNMDAyMvRnt4eW49daOUOSHExgYGOcw2sJ1cm8Cav6GP+5gYGAcwFgZlVhvlr2hNMXAwDiA0ba92qA893HFsCwGBsbWjDvaZG1ITcDRP2JgYBzAaMe22qDcNvJyHgYGxsmM9dHVa7jaZ14kjhgYGAcw2r5Wm8BdwZorazEwMPZmXOVaSQHbtl1xzImBgbE1Y+Wws0378sbZfYcNGBgYz2W0ZeS7nl9p6tU7jYGBsQUjL1nbwDrX9G+/FgMDA6NN71amIOYG1DAwMDCS67mBjHyoIipiMTAwtma0IxF5oGzTvtvbbRgYGA9kLJWO8UbkwxMtBgMDY2vGNyhRIuAYtJadAAAAAElFTkSuQmCC">分享</a><div class="tags"><a href="/tags/markdown/">markdown</a></div><div class="post-nav"><a class="pre" href="/p/e779c345.html">Git简单用法</a><a class="next" href="/p/ce42b873.html">MkDocs使用方法</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'true' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'9DRpW6J6HRqMj7yViPRrGulm-gzGzoHsz',
+  appKey:'cMF5OYo47YKLrECuygMTLBpe',
+  placeholder:'Just so so',
+  avatar:'retro',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"><input type="hidden" name="si" value="https://tony031218.github.io"><input name="tn" type="hidden" value="bds"><input name="cl" type="hidden" value="3"><input name="ct" type="hidden" value="2097152"><input name="s" type="hidden" value="on"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Luogu/" style="font-size: 15px;">Luogu</a> <a href="/tags/Cpp/" style="font-size: 15px;">Cpp</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/github/" style="font-size: 15px;">github</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/markdown/" style="font-size: 15px;">markdown</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/mkdocs/" style="font-size: 15px;">mkdocs</a> <a href="/tags/题解/" style="font-size: 15px;">题解</a> <a href="/tags/NOIp/" style="font-size: 15px;">NOIp</a> <a href="/tags/CSP-S/" style="font-size: 15px;">CSP-S</a> <a href="/tags/游记/" style="font-size: 15px;">游记</a> <a href="/tags/manim/" style="font-size: 15px;">manim</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/笔记/" style="font-size: 15px;">笔记</a> <a href="/tags/算法/" style="font-size: 15px;">算法</a> <a href="/tags/数论/" style="font-size: 15px;">数论</a> <a href="/tags/图论/" style="font-size: 15px;">图论</a> <a href="/tags/差分约束/" style="font-size: 15px;">差分约束</a> <a href="/tags/数据结构/" style="font-size: 15px;">数据结构</a> <a href="/tags/左偏树/" style="font-size: 15px;">左偏树</a> <a href="/tags/树状数组/" style="font-size: 15px;">树状数组</a> <a href="/tags/dsu-on-tree/" style="font-size: 15px;">dsu on tree</a> <a href="/tags/并查集/" style="font-size: 15px;">并查集</a> <a href="/tags/线段树/" style="font-size: 15px;">线段树</a> <a href="/tags/网络流/" style="font-size: 15px;">网络流</a> <a href="/tags/最短路/" style="font-size: 15px;">最短路</a> <a href="/tags/bfs/" style="font-size: 15px;">bfs</a> <a href="/tags/状态压缩/" style="font-size: 15px;">状态压缩</a> <a href="/tags/费用流/" style="font-size: 15px;">费用流</a> <a href="/tags/最大流/" style="font-size: 15px;">最大流</a> <a href="/tags/计算几何/" style="font-size: 15px;">计算几何</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/">C++算法</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/笔记/">笔记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/笔记/图论/">图论</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/笔记/数据结构/">数据结构</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/manim/">manim</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/manim/笔记/">笔记</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/游记/">游记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/题解/">题解</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/题解/网络流24题/">网络流24题</a></li></ul></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/p/cfb1d422.html">「网络流24题」深海机器人问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/5c532c45.html">「网络流24题」孤岛营救问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/fab3e888.html">「网络流24题」汽车加油行驶问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/f48af49a.html">「网络流24题」最长k可重线段集问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/949e7ebf.html">「网络流24题」最长k可重区间集问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/e7256d1.html">「网络流24题」火星探险问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/2e2c9a7.html">manim教程系列-颜色 笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/p/11da5c27.html">「网络流24题」骑士共存问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/25e68a12.html">「网络流24题」圆桌问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/40e04941.html">「网络流24题」方格取数问题-题解</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://github.com/Tony031218" title="我的GitHub" target="_blank">我的GitHub</a><ul></ul><a href="https://space.bilibili.com/171431343" title="我的哔哩哔哩主页" target="_blank">我的哔哩哔哩主页</a><ul></ul><a href="https://github.com/manim-kindergarten" title="manim-kindergarten" target="_blank">manim-kindergarten</a><ul></ul><a href="https://hk-shao.github.io" title="hk-shao's blog" target="_blank">hk-shao's blog</a><ul></ul><a href="http://blog.flwfdd.xyz/" title="范滇东的博客" target="_blank">范滇东的博客</a><ul></ul><a href="https://www.wychlw.club/" title="泠妄的博客" target="_blank">泠妄的博客</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">Tony's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

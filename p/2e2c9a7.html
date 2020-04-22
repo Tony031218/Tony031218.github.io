@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>manim教程系列-颜色 笔记 | Tony's Blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">manim教程系列-颜色 笔记</h1><a id="logo" href="/.">Tony's Blog</a><p class="description">鹤翔万里的博客</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/Template-Problem/"><i class="fa fa-question"> 模板题目整理</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">manim教程系列-颜色 笔记</h1><div class="post-meta">Apr 18, 2020<span> | </span><span class="category"><a href="/categories/manim/">manim</a><a href="/categories/manim/笔记/">笔记</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a class="disqus-comment-count" href="/p/2e2c9a7.html#vcomment"><span class="valine-comment-count" data-xid="/p/2e2c9a7.html"></span><span> 条评论</span></a><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#视频结构大纲"><span class="toc-number">1.</span> <span class="toc-text">视频结构大纲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一些码视频时的笔记"><span class="toc-number">2.</span> <span class="toc-text">一些码视频时的笔记</span></a></li></ol></div></div><div class="post-content"><p>这篇文章是在写 <strong>manim教程系列视频</strong> 的 <em>颜色</em> 部分时做的一些笔记,包括 整个视频的结构 和 写代码时了解的一些用法的笔记<br>视频已经发布,地址:<a href="https://www.bilibili.com/video/BV1vZ4y1x7hT" target="_blank" rel="noopener">BV1vZ4y1x7hT</a></p>
+<a id="more"></a>
+<h2 id="视频结构大纲"><a href="#视频结构大纲" class="headerlink" title="视频结构大纲"></a>视频结构大纲</h2><ol start="0">
+<li style="list-style: none"><input type="checkbox" checked> 开头<ul>
+<li>开始,标题,展示所有要将的方法</li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 颜色的表示<ul>
+<li>所有<code>constants.py</code>中的颜色常量</li>
+<li>使用hex表示颜色</li>
+<li>使用rgb的ndarray表示颜色</li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 颜色之间的转换<ul>
+<li><code>rgb_to_hex</code></li>
+<li><code>hex_to_rgb</code></li>
+<li><code>color_to_rgb</code></li>
+<li><code>rgb_to_color</code></li>
+<li><code>color_to_int_rgb</code></li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 颜色的运算函数<ul>
+<li><code>invert_color</code></li>
+<li><code>color_gradient</code></li>
+<li><code>interpolate_color</code></li>
+<li><code>average_color</code></li>
+<li><code>random_color</code></li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 设置颜色<ul>
+<li><code>Mobject</code>略,一般上色的都为<code>VMobject</code></li>
+<li><code>color</code>分为<code>stroke_color</code>和<code>fill_color</code></li>
+<li>传入<code>color</code>, <code>stroke_color</code>, <code>fill_color</code></li>
+<li><code>set_color</code>, <code>set_stroke</code>, <code>set_fill</code>方法的<code>color</code>和<code>opacity</code></li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 给子物体上色<ul>
+<li><code>set_color</code></li>
+<li><code>set_color_by_gradient</code></li>
+<li><code>set_colors_by_radial_gradient</code></li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 光泽与渐变色<ul>
+<li><code>set_sheen</code></li>
+<li><code>set_color</code>中使用列表达到渐变色</li>
+</ul>
+</li>
+</ol>
+<h2 id="一些码视频时的笔记"><a href="#一些码视频时的笔记" class="headerlink" title="一些码视频时的笔记"></a>一些码视频时的笔记</h2><ul>
+<li><code>isinstance</code>函数检测对象的类型</li>
+<li>对一个字符串进行format时,想要用空格补齐左边到一定个数,可以使用<code>str(...).rjust(num)</code></li>
+<li>涉及到<code>Transform</code>Text的地方,在Text里面不可以有空格,需要用白色的<code>~</code>来做出伪空格</li>
+<li>字符串中查找一个字符的下标可以用<code>.index(&quot; &quot;, beg=..., end=...)</code>方法来查找第一次出现的位置,第二次出现需要传入<code>beg</code>为第一次位置+1</li>
+<li>manim的<code>rgb_to_color</code>函数传入的rgb的值为0~1,不是0~255</li>
+<li>用for循环遍历字典键值对<code>for key, value in dic.items():</code>,遍历其中一部分<code>for key, value in list(dic.items())[1:3]</code>将键值对转化为列表,并用切片</li>
+<li><code>Arrow</code>的箭头为<code>.tip</code></li>
+<li><code>.keys(),.values()</code>不为列表,需要套在<code>list()</code>里面</li>
+<li><code>set_colors_by_radial_gradient</code>利用中心与center的距离对颜色进行插值,radius外的所有子物体全为outer_color颜色</li>
+<li>含有<code>sheen_factor</code>的物体设置渐变色后与sheen_factor无关</li>
+</ul>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a class="article-share-link" data-url="https://tony031218.github.io/p/2e2c9a7.html" data-id="ck9ao3oyj002etcftdwrv4zmu" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACIElEQVR42u3aMW7DMAwFUN//0u6aoXY+ySSApaepcFRZzwNBijqOeJwv4/VJ79fkXcc3BgYGxmMZ5+24mpNv92p+9RNc7QEDA2Mfxn3g+8ZWeu+6fI6BgYERb723aQwMDIzvBdw36dp4DgYGBka1iE2C5qQk/lEtjoGB8UBG9bD+l39/pb+BgYHxKMZZHNXVqts6WwMDA2NtRv6anFRtdvauZWBgYGAkR/952Vm9/nW//tFbDgMDYyFGchA2TxyTRmbekMDAwNiBkQS7anD8VNHbC9kYGBjrMXoFai+YVo/e8hYFBgbG2ow8dFZL096akyCOgYGxHqPadOzd5phsMQJjYGBswyj/8yBlnKzwz3MMDIwNGPPDtfzX+6ZC/rHeXLPAwMBYiNFrNPYOxfJWwQeuX2BgYCzE6B3W50Vvnmj2Sug3GS4GBsYSjCTlSoLvPW9+/SIKzRgYGIsyqldRq0Vm9dNUD9ou+xsYGBgLMXrJ3JzXK2LzZBQDA2M9RhIW88O4vAFQnfPmk2FgYGzA+FQ9mF+w6JGO3lYwMDAWZRyDUQ3Nk5UxMDDWZpzFMW9DTpCXa2JgYCzN6IW5/KJYL+msNk0xMDB2YORBdpSBxphm4oiBgbEBo9qYrKaJveZlYSYGBgZG0OBMEri8JZk3NTEwMDCq5Wg1sCahObn2gYGBsQOjd5Eref1nZ2JgYOzJ6JWOvUO6OWnU1MTAwHge4w80IAPx+pSznQAAAABJRU5ErkJggg==">分享</a><div class="tags"><a href="/tags/manim/">manim</a><a href="/tags/python/">python</a><a href="/tags/笔记/">笔记</a></div><div class="post-nav"><a class="pre" href="/p/e7256d1.html">「网络流24题」火星探险问题-题解</a><a class="next" href="/p/11da5c27.html">「网络流24题」骑士共存问题-题解</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'true' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'9DRpW6J6HRqMj7yViPRrGulm-gzGzoHsz',
+  appKey:'cMF5OYo47YKLrECuygMTLBpe',
+  placeholder:'Just so so',
+  avatar:'retro',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"><input type="hidden" name="si" value="https://tony031218.github.io"><input name="tn" type="hidden" value="bds"><input name="cl" type="hidden" value="3"><input name="ct" type="hidden" value="2097152"><input name="s" type="hidden" value="on"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Luogu/" style="font-size: 15px;">Luogu</a> <a href="/tags/Cpp/" style="font-size: 15px;">Cpp</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/github/" style="font-size: 15px;">github</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/markdown/" style="font-size: 15px;">markdown</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/mkdocs/" style="font-size: 15px;">mkdocs</a> <a href="/tags/题解/" style="font-size: 15px;">题解</a> <a href="/tags/NOIp/" style="font-size: 15px;">NOIp</a> <a href="/tags/CSP-S/" style="font-size: 15px;">CSP-S</a> <a href="/tags/游记/" style="font-size: 15px;">游记</a> <a href="/tags/manim/" style="font-size: 15px;">manim</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/笔记/" style="font-size: 15px;">笔记</a> <a href="/tags/算法/" style="font-size: 15px;">算法</a> <a href="/tags/数论/" style="font-size: 15px;">数论</a> <a href="/tags/图论/" style="font-size: 15px;">图论</a> <a href="/tags/差分约束/" style="font-size: 15px;">差分约束</a> <a href="/tags/数据结构/" style="font-size: 15px;">数据结构</a> <a href="/tags/左偏树/" style="font-size: 15px;">左偏树</a> <a href="/tags/树状数组/" style="font-size: 15px;">树状数组</a> <a href="/tags/dsu-on-tree/" style="font-size: 15px;">dsu on tree</a> <a href="/tags/并查集/" style="font-size: 15px;">并查集</a> <a href="/tags/线段树/" style="font-size: 15px;">线段树</a> <a href="/tags/网络流/" style="font-size: 15px;">网络流</a> <a href="/tags/最短路/" style="font-size: 15px;">最短路</a> <a href="/tags/bfs/" style="font-size: 15px;">bfs</a> <a href="/tags/状态压缩/" style="font-size: 15px;">状态压缩</a> <a href="/tags/费用流/" style="font-size: 15px;">费用流</a> <a href="/tags/最大流/" style="font-size: 15px;">最大流</a> <a href="/tags/计算几何/" style="font-size: 15px;">计算几何</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/">C++算法</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/笔记/">笔记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/笔记/图论/">图论</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/笔记/数据结构/">数据结构</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/manim/">manim</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/manim/笔记/">笔记</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/游记/">游记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/题解/">题解</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/题解/网络流24题/">网络流24题</a></li></ul></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/p/cfb1d422.html">「网络流24题」深海机器人问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/5c532c45.html">「网络流24题」孤岛营救问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/fab3e888.html">「网络流24题」汽车加油行驶问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/f48af49a.html">「网络流24题」最长k可重线段集问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/949e7ebf.html">「网络流24题」最长k可重区间集问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/e7256d1.html">「网络流24题」火星探险问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/2e2c9a7.html">manim教程系列-颜色 笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/p/11da5c27.html">「网络流24题」骑士共存问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/25e68a12.html">「网络流24题」圆桌问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/40e04941.html">「网络流24题」方格取数问题-题解</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://github.com/Tony031218" title="我的GitHub" target="_blank">我的GitHub</a><ul></ul><a href="https://space.bilibili.com/171431343" title="我的哔哩哔哩主页" target="_blank">我的哔哩哔哩主页</a><ul></ul><a href="https://github.com/manim-kindergarten" title="manim-kindergarten" target="_blank">manim-kindergarten</a><ul></ul><a href="https://hk-shao.github.io" title="hk-shao's blog" target="_blank">hk-shao's blog</a><ul></ul><a href="http://blog.flwfdd.xyz/" title="范滇东的博客" target="_blank">范滇东的博客</a><ul></ul><a href="https://www.wychlw.club/" title="泠妄的博客" target="_blank">泠妄的博客</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">Tony's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
