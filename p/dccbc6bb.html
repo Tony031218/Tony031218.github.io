@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>「网络流24题」总结及图示 | Tony's Blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">「网络流24题」总结及图示</h1><a id="logo" href="/.">Tony's Blog</a><p class="description">鹤翔万里的博客</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/Template-Problem/"><i class="fa fa-question"> 模板题目整理</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">「网络流24题」总结及图示</h1><div class="post-meta">Apr 28, 2020<span> | </span><span class="category"><a href="/categories/题解/">题解</a><a href="/categories/题解/网络流24题/">网络流24题</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a class="disqus-comment-count" href="/p/dccbc6bb.html#vcomment"><span class="valine-comment-count" data-xid="/p/dccbc6bb.html"></span><span> 条评论</span></a><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#二分图"><span class="toc-number">1.</span> <span class="toc-text">二分图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网络流"><span class="toc-number">2.</span> <span class="toc-text">网络流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#24题"><span class="toc-number">3.</span> <span class="toc-text">24题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#图示"><span class="toc-number">4.</span> <span class="toc-text">图示</span></a></li></ol></div></div><div class="post-content"><table>
+<thead>
+<tr>
+<th style="text-align:center">问题编号</th>
+<th style="text-align:left">问题名称</th>
+<th style="text-align:left">问题模型</th>
+<th style="text-align:left">转化模型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P2756" target="_blank" rel="noopener">飞行员配对方案问题</a></td>
+<td style="text-align:left">二分图最大匹配</td>
+<td style="text-align:left">网络最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P2762" target="_blank" rel="noopener">太空飞行计划问题</a></td>
+<td style="text-align:left">最大权闭合图</td>
+<td style="text-align:left">网络最小割</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P2764" target="_blank" rel="noopener">最小路径覆盖问题</a></td>
+<td style="text-align:left">有向无环图最小路径覆盖</td>
+<td style="text-align:left">网络最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P2765" target="_blank" rel="noopener">魔术球问题</a></td>
+<td style="text-align:left">有向无环图最小路径覆盖</td>
+<td style="text-align:left">网络最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P3254" target="_blank" rel="noopener">圆桌问题</a></td>
+<td style="text-align:left">二分图多重匹配</td>
+<td style="text-align:left">网络最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P2766" target="_blank" rel="noopener">最长不下降子序列问题</a></td>
+<td style="text-align:left">最多不相交路径</td>
+<td style="text-align:left">网络最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P2763" target="_blank" rel="noopener">试题库问题</a></td>
+<td style="text-align:left">二分图多重匹配</td>
+<td style="text-align:left">网络最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P2775" target="_blank" rel="noopener">机器人路径规划问题</a></td>
+<td style="text-align:left">$IDA*$</td>
+<td style="text-align:left">$IDA*$</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P2774" target="_blank" rel="noopener">方格取数问题</a></td>
+<td style="text-align:left">二分图点权最大独立集</td>
+<td style="text-align:left">网络最小割</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P1251" target="_blank" rel="noopener">餐巾计划问题</a></td>
+<td style="text-align:left">线性规划网络优化</td>
+<td style="text-align:left">最小费用最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P2770" target="_blank" rel="noopener">航空路线问题</a></td>
+<td style="text-align:left">最长不相交路径</td>
+<td style="text-align:left">最小费用最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P2761" target="_blank" rel="noopener">软件补丁问题</a></td>
+<td style="text-align:left">最小转移代价</td>
+<td style="text-align:left">最短路径</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P2754" target="_blank" rel="noopener">星际转移问题</a></td>
+<td style="text-align:left">网络判定</td>
+<td style="text-align:left">网络最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P4011" target="_blank" rel="noopener">孤岛营救问题</a></td>
+<td style="text-align:left">分层图最短路径</td>
+<td style="text-align:left">最短路径</td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P4009" target="_blank" rel="noopener">汽车加油行驶问题</a></td>
+<td style="text-align:left">分层图最短路径</td>
+<td style="text-align:left">最短路径</td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P4013" target="_blank" rel="noopener">数字梯形问题</a></td>
+<td style="text-align:left">最大权不相交路径</td>
+<td style="text-align:left">最小费用最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">17</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P4015" target="_blank" rel="noopener">运输问题</a></td>
+<td style="text-align:left">网络费用流量</td>
+<td style="text-align:left">最小费用最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">18</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P4014" target="_blank" rel="noopener">分配问题</a></td>
+<td style="text-align:left">二分图最佳匹配</td>
+<td style="text-align:left">最小费用最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">19</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P4016" target="_blank" rel="noopener">负载平衡问题</a></td>
+<td style="text-align:left">最小代价供求</td>
+<td style="text-align:left">最小费用最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">20</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P4012" target="_blank" rel="noopener">深海机器人问题</a></td>
+<td style="text-align:left">线性规划网络优化</td>
+<td style="text-align:left">最小费用最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">21</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P3358" target="_blank" rel="noopener">最长k可重区间集问题</a></td>
+<td style="text-align:left">最大权不相交路径</td>
+<td style="text-align:left">最小费用最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">22</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P3357" target="_blank" rel="noopener">最长k可重线段集问题</a></td>
+<td style="text-align:left">最大权不相交路径</td>
+<td style="text-align:left">最小费用最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">23</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P3356" target="_blank" rel="noopener">火星探险问题</a></td>
+<td style="text-align:left">线性规划网络优化</td>
+<td style="text-align:left">最小费用最大流</td>
+</tr>
+<tr>
+<td style="text-align:center">24</td>
+<td style="text-align:left"><a href="https://www.luogu.com.cn/problem/P3355" target="_blank" rel="noopener">骑士共存问题</a></td>
+<td style="text-align:left">二分图最大独立集</td>
+<td style="text-align:left">网络最小割</td>
+</tr>
+</tbody>
+</table>
+<h3 id="二分图"><a href="#二分图" class="headerlink" title="二分图"></a>二分图</h3><ul>
+<li><strong>最大匹配</strong>: 匈牙利/最大流</li>
+<li><strong>带权匹配</strong>: KM/费用流</li>
+<li><strong>最小点覆盖</strong>: =最大匹配</li>
+<li><strong>最小边覆盖</strong>: =总结点数-最大匹配</li>
+<li><strong>最大独立集</strong>: =总结点数-最大匹配</li>
+</ul>
+<h3 id="网络流"><a href="#网络流" class="headerlink" title="网络流"></a>网络流</h3><ul>
+<li>建立超级源点,超级汇点</li>
+<li>点存在限制,拆成出入点,将出入点之间的边看做点,限制流量</li>
+<li>建图考虑左右二部</li>
+<li>超级源点向源点的边可以限制总流量</li>
+<li>无源汇有容量下界:<code>s-下界-&gt;v  u-下界-&gt;t  u-上界减下界-&gt;v</code>,当满流时存在可行流</li>
+<li>最小割中赋流量为inf则一定不会割去</li>
+<li>一些求最大问题,可以用sum-最小割</li>
+<li>最大权闭合图: 建图,最小割,仍和s相连的为最大权闭合图,权值和为sum-最小割</li>
+</ul>
+<h3 id="24题"><a href="#24题" class="headerlink" title="24题"></a>24题</h3><ol>
+<li>直接建二分图,最大流求最大匹配</li>
+<li>最大权闭合图,建边,实验和仪器之间保证不切割容量为inf,跑最小割,找与s相连的实验和仪器</li>
+<li>最大独立集,总结点数-最大流</li>
+<li>贪心</li>
+<li>二分图多重匹配,s-&gt;左点集和右点集-&gt;t之间的边容量不为1(即可以选多次)</li>
+<li>动态规划+按照动态规划的dp数组的意义建边求最大流</li>
+<li>二分图多重匹配,类型-题目数-&gt;汇点,保证可选多个,存在满流则存在答案沿满流输出</li>
+<li>$IDA*$爆搜,但洛谷数据应该有问题</li>
+<li>抽象出两个点集,求最大独立集</li>
+<li>按照题目说明建图,跑费用流</li>
+<li>按照题目说明建图,跑费用流</li>
+<li>将错误状态进行压缩,然后跑最短路</li>
+<li>根据时间逐层建图,直到跑出可行流</li>
+<li>将拥有钥匙进行压缩,跑最短路</li>
+<li>建出分层图,跑最短路或者费用流</li>
+<li>对三个规则分别建图,跑费用流</li>
+<li>纯费用流</li>
+<li>二分图最佳匹配,使用费用流</li>
+<li>费用流,注意环形</li>
+<li>按照题目要求建图,跑费用流</li>
+<li>离散化,将区间转化为边,费用流</li>
+<li>转化问题,变成21题,注意端点处理和垂直于x轴的线段</li>
+<li>按照题目要求建图,跑费用流,方案dfs</li>
+<li>将图上所有格点转化为两个点集,建二分图,求最大独立集</li>
+</ol>
+<h3 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h3><p><strong><del>更新中</del></strong><br><img src="/p/f5a4cbbc/NF24P2762.png" alt="2"><br><img src="/p/af442de1/NF24P2754.png" alt="13"><br><img src="/p/949e7ebf/NF24P3358.png" alt="21"><br><img src="/p/f48af49a/NF24P3357.png" alt="22"></p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a class="article-share-link" data-url="https://tony031218.github.io/p/dccbc6bb.html" data-id="ck9jc6l35003t3jftefqpl3r2" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKElEQVR42u3aS07DMBQF0O5/00FiWhrdaxtE7ONRldA0x0hPfp/XK17X93r/vPbK/fUFCwMD47GM63YlP/n+l5+++343f9qnd8PAwDiHkQTZJOzeA5Lv5tuHgYGBkb/QTJBtwRgYGBhJwM1D7aorGBgYGHkS2x4Qk1CbPH9xLo6BgfFAxkxj4Lc//1F/AwMD4x8zrnIlz1l17CveCgMDY2vGzBhEXtxvxynG8BgYGHsz5huZM8F6bFuL/wkGBsYWjLGxiXy0oi2cDQZrDAyMTRlt6GzLYe12jAV9DAyMExhjBfqxoljbBI2anRgYGFsz8gJ92wyYP1bWzU4MDIxNGWPhdeZumwDfJ7oYGBgnMPJ0cebAlyS9eRKLgYFxGuO+KJ+XxnLePAADA+NMRjukNT86ll8pxiwwMDAOYMwc9drAOtYW/UjCwMDYmpEX5fNxrrHiWnvQLIbDMDAwHs5IAmVSoG83Ze2WYWBg7M2YOcaNldLWBt9XvvcYGBiPZbRDD4sL+mPFtZmHYmBgPJbRJqJtQEy2IAf88C0MDIytGWPVqvljX5KmtmMZGBgYuzKucuWJbt2ADGYnPt7FwMDYmpGv9njXhuZ8EA0DA+NMRjse0bY2x0Jzvd8YGBgHMNqUdSZ0tslzdLjEwMDAiI+GeXjNtyYKwRgYGBjTg1xtmpofNDEwMM5h5EMVeaxr25/5b9WNTAwMjIcz2gRyjNS2OX8Fg4GB8TzGF59q0T9aB424AAAAAElFTkSuQmCC">分享</a><div class="tags"><a href="/tags/Cpp/">Cpp</a><a href="/tags/NOIp/">NOIp</a><a href="/tags/题解/">题解</a><a href="/tags/网络流/">网络流</a><a href="/tags/费用流/">费用流</a></div><div class="post-nav"><a class="next" href="/p/49548215.html">「Luogu P1494」小Z的袜子-题解</a></div><div id="vcomment"></div><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'true' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'9DRpW6J6HRqMj7yViPRrGulm-gzGzoHsz',
+  appKey:'cMF5OYo47YKLrECuygMTLBpe',
+  placeholder:'Just so so',
+  avatar:'retro',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"><input type="hidden" name="si" value="https://tony031218.github.io"><input name="tn" type="hidden" value="bds"><input name="cl" type="hidden" value="3"><input name="ct" type="hidden" value="2097152"><input name="s" type="hidden" value="on"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/数论/" style="font-size: 15px;">数论</a> <a href="/tags/Cpp/" style="font-size: 15px;">Cpp</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/github/" style="font-size: 15px;">github</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/markdown/" style="font-size: 15px;">markdown</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/mkdocs/" style="font-size: 15px;">mkdocs</a> <a href="/tags/manim/" style="font-size: 15px;">manim</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/笔记/" style="font-size: 15px;">笔记</a> <a href="/tags/NOIp/" style="font-size: 15px;">NOIp</a> <a href="/tags/游记/" style="font-size: 15px;">游记</a> <a href="/tags/CSP-S/" style="font-size: 15px;">CSP-S</a> <a href="/tags/题解/" style="font-size: 15px;">题解</a> <a href="/tags/Luogu/" style="font-size: 15px;">Luogu</a> <a href="/tags/算法/" style="font-size: 15px;">算法</a> <a href="/tags/图论/" style="font-size: 15px;">图论</a> <a href="/tags/差分约束/" style="font-size: 15px;">差分约束</a> <a href="/tags/莫队/" style="font-size: 15px;">莫队</a> <a href="/tags/dsu-on-tree/" style="font-size: 15px;">dsu on tree</a> <a href="/tags/数据结构/" style="font-size: 15px;">数据结构</a> <a href="/tags/树状数组/" style="font-size: 15px;">树状数组</a> <a href="/tags/左偏树/" style="font-size: 15px;">左偏树</a> <a href="/tags/并查集/" style="font-size: 15px;">并查集</a> <a href="/tags/线段树/" style="font-size: 15px;">线段树</a> <a href="/tags/网络流/" style="font-size: 15px;">网络流</a> <a href="/tags/费用流/" style="font-size: 15px;">费用流</a> <a href="/tags/最短路/" style="font-size: 15px;">最短路</a> <a href="/tags/最大流/" style="font-size: 15px;">最大流</a> <a href="/tags/bfs/" style="font-size: 15px;">bfs</a> <a href="/tags/状态压缩/" style="font-size: 15px;">状态压缩</a> <a href="/tags/计算几何/" style="font-size: 15px;">计算几何</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/">C++算法</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/笔记/">笔记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/笔记/图论/">图论</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/C-算法/笔记/数据结构/">数据结构</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/manim/">manim</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/manim/笔记/">笔记</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/游记/">游记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/题解/">题解</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/题解/网络流24题/">网络流24题</a></li></ul></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/p/dccbc6bb.html">「网络流24题」总结及图示</a></li><li class="post-list-item"><a class="post-list-link" href="/p/49548215.html">「Luogu P1494」小Z的袜子-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/b8624866.html">「网络流24题」负载平衡问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/152673e9.html">「网络流24题」运输问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/11b1dcbd.html">「网络流24题」分配问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/86b4c1f9.html">「网络流24题」数字梯形问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/cfb1d422.html">「网络流24题」深海机器人问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/5c532c45.html">「网络流24题」孤岛营救问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/fab3e888.html">「网络流24题」汽车加油行驶问题-题解</a></li><li class="post-list-item"><a class="post-list-link" href="/p/f48af49a.html">「网络流24题」最长k可重线段集问题-题解</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://github.com/Tony031218" title="我的GitHub" target="_blank">我的GitHub</a><ul></ul><a href="https://space.bilibili.com/171431343" title="我的哔哩哔哩主页" target="_blank">我的哔哩哔哩主页</a><ul></ul><a href="https://github.com/manim-kindergarten" title="manim-kindergarten" target="_blank">manim-kindergarten</a><ul></ul><a href="https://hk-shao.github.io" title="hk-shao's blog" target="_blank">hk-shao's blog</a><ul></ul><a href="http://blog.flwfdd.xyz/" title="范滇东的博客" target="_blank">范滇东的博客</a><ul></ul><a href="https://www.wychlw.club/" title="泠妄的博客" target="_blank">泠妄的博客</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">Tony's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
