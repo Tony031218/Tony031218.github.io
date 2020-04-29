@@ -95,3 +95,9 @@ deploy:
   branch: master
 
 mathjax: true
+
+search:
+  path: search.xml
+  field: all
+  content: true
+  limit: 9999
