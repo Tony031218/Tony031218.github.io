@@ -1,5 +1,5 @@
 ---
-title: 带修莫队-笔记/「Luogu P1903」数颜色-题解
+title: 带修莫队-笔记  /「Luogu P1903」数颜色-题解
 mathjax: true
 toc: true
 abbrlink: 838c5e29
